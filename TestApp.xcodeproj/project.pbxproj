@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C5A15AF1EFB045B00237CEF /* Bluetooth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5A15AE1EFB045B00237CEF /* Bluetooth.swift */; };
 		8CBC720A1EF4D30D000223C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBC72091EF4D30D000223C5 /* AppDelegate.swift */; };
 		8CBC720C1EF4D30D000223C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBC720B1EF4D30D000223C5 /* ViewController.swift */; };
 		8CBC720F1EF4D30D000223C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CBC720D1EF4D30D000223C5 /* Main.storyboard */; };
 		8CBC72111EF4D30D000223C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CBC72101EF4D30D000223C5 /* Assets.xcassets */; };
 		8CBC72141EF4D30D000223C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CBC72121EF4D30D000223C5 /* LaunchScreen.storyboard */; };
 		8CBC721F1EF4D30D000223C5 /* TestAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBC721E1EF4D30D000223C5 /* TestAppTests.swift */; };
+		8CBC722B1EF4D445000223C5 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CBC722A1EF4D445000223C5 /* ExternalAccessory.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8C5A15AE1EFB045B00237CEF /* Bluetooth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bluetooth.swift; sourceTree = "<group>"; };
 		8CBC72061EF4D30D000223C5 /* TestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CBC72091EF4D30D000223C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CBC720B1EF4D30D000223C5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +39,8 @@
 		8CBC721A1EF4D30D000223C5 /* TestAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CBC721E1EF4D30D000223C5 /* TestAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAppTests.swift; sourceTree = "<group>"; };
 		8CBC72201EF4D30D000223C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CBC722A1EF4D445000223C5 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		8CBC722C1EF4D445000223C5 /* TestApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TestApp.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CBC722B1EF4D445000223C5 /* ExternalAccessory.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +68,7 @@
 				8CBC72081EF4D30D000223C5 /* TestApp */,
 				8CBC721D1EF4D30D000223C5 /* TestAppTests */,
 				8CBC72071EF4D30D000223C5 /* Products */,
+				8CBC72291EF4D445000223C5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,12 +84,14 @@
 		8CBC72081EF4D30D000223C5 /* TestApp */ = {
 			isa = PBXGroup;
 			children = (
+				8CBC722C1EF4D445000223C5 /* TestApp.entitlements */,
 				8CBC72091EF4D30D000223C5 /* AppDelegate.swift */,
 				8CBC720B1EF4D30D000223C5 /* ViewController.swift */,
 				8CBC720D1EF4D30D000223C5 /* Main.storyboard */,
 				8CBC72101EF4D30D000223C5 /* Assets.xcassets */,
 				8CBC72121EF4D30D000223C5 /* LaunchScreen.storyboard */,
 				8CBC72151EF4D30D000223C5 /* Info.plist */,
+				8C5A15AE1EFB045B00237CEF /* Bluetooth.swift */,
 			);
 			path = TestApp;
 			sourceTree = "<group>";
@@ -94,6 +103,14 @@
 				8CBC72201EF4D30D000223C5 /* Info.plist */,
 			);
 			path = TestAppTests;
+			sourceTree = "<group>";
+		};
+		8CBC72291EF4D445000223C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8CBC722A1EF4D445000223C5 /* ExternalAccessory.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +164,11 @@
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 36V33EKX22;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.WAC = {
+								enabled = 1;
+							};
+						};
 					};
 					8CBC72191EF4D30D000223C5 = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -201,6 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CBC720C1EF4D30D000223C5 /* ViewController.swift in Sources */,
+				8C5A15AF1EFB045B00237CEF /* Bluetooth.swift in Sources */,
 				8CBC720A1EF4D30D000223C5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,6 +365,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TestApp/TestApp.entitlements;
 				DEVELOPMENT_TEAM = 36V33EKX22;
 				INFOPLIST_FILE = TestApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -355,6 +379,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TestApp/TestApp.entitlements;
 				DEVELOPMENT_TEAM = 36V33EKX22;
 				INFOPLIST_FILE = TestApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -413,6 +438,7 @@
 				8CBC72251EF4D30D000223C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8CBC72261EF4D30D000223C5 /* Build configuration list for PBXNativeTarget "TestAppTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +447,7 @@
 				8CBC72281EF4D30D000223C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
